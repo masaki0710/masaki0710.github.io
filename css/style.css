@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    background: #fff;
+    color: #000;
+    font-family: inter;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+}
+
+.sitebar {
+    position: sticky;
+    top:100;
+    align-self: start;
+    padding-left: 30px;
+}
+
+.site-name {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.works {
+    padding: 100px 60px 130px 0;
+}
+
+.work {
+    margin: 0;
+}
+
+.work + .work {
+    margin-top: 120px;
+}
+
+.work img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.work figcaption {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.work-title,
+.work-meta {
+    margin: 0;
+}
