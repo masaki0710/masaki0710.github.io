@@ -13,11 +13,12 @@ a {
 .layout {
     display: grid;
     grid-template-columns: 40% 1fr;
+    max-width: 1800px;
+    margin: 0 auto;
 }
 
 .sitebar {
     position: sticky;
-    top:100;
     align-self: start;
     padding-left: 30px;
 }
@@ -28,7 +29,7 @@ a {
 }
 
 .works {
-    padding: 100px 60px 130px 0;
+    padding: 50px 30px 130px 30px;
 }
 
 .work {
@@ -53,4 +54,37 @@ a {
 .work-title,
 .work-meta {
     margin: 0;
+}
+
+.work-image {
+    position: relative;
+}
+
+.work-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.work-image:hover .work-overlay {
+    opacity: 1;
+}
+
+.work-video iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+}
+
+.youtube-link img {
+  display: block;
+  width: auto;
+  height: 40px;
 }
